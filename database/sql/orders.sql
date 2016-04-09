@@ -1,0 +1,16 @@
+INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `product_name`, `product_variant`, `product_variant_name`, `quantity`, `price`, `status_fulfillment`, `created_at`, `updated_at`) VALUES
+(1, '162F857CD04569', 6, '1.5 Inch Picture Pendant With 1.70mm Diamonds', '0', '', 2, 2999, 2, '2022-08-14 02:03:01', '2022-08-14 02:48:50'),
+(2, '162F857CD04569', 1, '0.81 TCW Round Diamond Cluster Stud Earrings', '0', '', 2, 1999, 2, '2022-08-14 02:03:01', '2022-08-14 02:48:47'),
+(3, '162F857CD04569', 11, '2.5 Inch V Lone Logo Pendant', '0', '', 1, 4999, 2, '2022-08-14 02:03:01', '2022-08-14 02:48:45'),
+(4, '162F857CD04569', 12, '1.5 Inch Rolex Bezel Picture Pendant', '0', '', 1, 2499, 1, '2022-08-14 02:03:01', '2022-08-14 02:03:01'),
+(6, '162F857FCCB0D0', 12, '1.5 Inch Rolex Bezel Picture Pendant', '0', '', 1, 2499, 1, '2022-08-14 02:03:51', '2022-08-14 02:03:51'),
+(7, '162FE5C2072C74', 30, 'Jagged Edge Cross Pendant', '0', '', 1, 4999, 1, '2022-08-18 15:35:04', '2022-08-18 15:35:04'),
+(8, '162FE6E2BB519E', 30, 'Jagged Edge Cross Pendant', '0', '', 1, 4999, 1, '2022-08-18 16:52:15', '2022-08-18 16:52:15'),
+(9, '162FE77715BFED', 28, 'Plain Shooting Star Bracelet', '0', '', 1, 4999, 1, '2022-08-18 17:31:42', '2022-08-18 17:31:42');
+
+INSERT INTO `orders` (`id`, `user_id`, `order_id`, `total`, `shipping_option_id`, `tax_option_id`, `grand_total`, `shipping_address1`, `shipping_address2`, `shipping_city`, `shipping_state`, `shipping_zipcode`, `shipping_country`, `shipping_phonenumber`, `billing_address1`, `billing_address2`, `billing_city`, `billing_state`, `billing_zipcode`, `billing_country`, `billing_phonenumber`, `payment_intent`, `status_payment`, `status_payment_reason`, `created_at`, `updated_at`) VALUES
+(1, 1, '162F857CD04569', 2499, 1, 0, 3498, '99 Wall St', NULL, 'New York', 'New York', '10029', 'US', NULL, '99 Wall St', NULL, 'New York', 'New York', '10029', 'US', NULL, 'pi_3LWWADDNgrti9hIt1lTLEe1f', 2, '', '2022-08-14 02:03:01', '2022-08-14 02:03:04'),
+(3, 1, '162F857FCCB0D0', 2499, 1, 0, 3498, '99 Wall St', NULL, 'New York', 'New York', '10029', 'US', NULL, '447 s 3rd Ave', NULL, 'New York', 'New York', '10029', 'US', NULL, 'pi_3LWWAzDNgrti9hIt1xRxggtE', 2, '', '2022-08-14 02:03:51', '2022-08-14 02:03:54'),
+(4, 1, '162FE5C2072C74', 4999, 1, 0, 5998, 'shipping address update test', NULL, 'New York', 'New York', '10050', 'US', '9292880079', 'billing address update test 2', NULL, 'New York', 'New York', '10550', 'AF', '9292880079', 'pi_3LYAkGDNgrti9hIt0ktWuf7L', 2, '', '2022-08-18 15:35:04', '2022-08-18 15:35:07'),
+(5, 1, '162FE6E2BB519E', 4999, 1, 0, 5998, 'shipping address', 'secondary shipping', 'New York', 'New York', '10005', 'US', '9292880079', '99 Wall St billing', NULL, 'New York', 'New York', '10005', 'US', '9292880079', 'pi_3LYBwmDNgrti9hIt0m76vPna', 2, '', '2022-08-18 16:52:15', '2022-08-18 16:52:18'),
+(6, 1, '162FE77715BFED', 4999, 1, 0, 5998, 'shipping address', 'secondary shipping', 'New York', 'New York', '10005', 'US', '9292880079', 'shipping address 99 wall stt', NULL, 'New York', 'New York', '10005', 'US', '9292880079', 'pi_3LYCZ3DNgrti9hIt252mBo4E', 2, '', '2022-08-18 17:31:42', '2022-08-18 17:31:46');
